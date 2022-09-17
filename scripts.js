@@ -7,7 +7,7 @@ function converterValor() {
   let btnEuro = document.getElementById("euro").selected;
   let btnIene = document.getElementById("iene").selected;
   let btnLibra = document.getElementById("libra").selected;
-  let btnPesos = document.getElementById("peso").selected;
+  let btnPeso = document.getElementById("peso").selected;
 
   let elementoValorConvertido = document.getElementById("valorConvertido");
 
