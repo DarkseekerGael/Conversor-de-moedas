@@ -58,3 +58,12 @@ body {
     font-size: 30px;
   }
   
+  button:hover {
+    cursor: pointer;
+  }
+
+  select {
+    width: 187px;
+    padding: 6px;
+    border-radius: 5px;
+  }
