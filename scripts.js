@@ -12,8 +12,9 @@ function converterValor() {
   let elementoValorConvertido = document.getElementById("valorConvertido");
 
   if (valor <= 0) {
-    let valorConvertido = "Digite um valor superior a zero!";
-    elementoValorConvertido.innerHTML = valorConvertido;
+    elementoValorConvertido.innerHTML = "Digite um valor superior a zero";
+  } else if (Number.isNaN(valor)) {
+    elementoValorConvertido.innerHTML = "Digite um valor a ser convertido";
   } else if (btnReal == true) {
     paraReal(valor, elementoValorConvertido);
   } else if (btnBitcoin == true) {
