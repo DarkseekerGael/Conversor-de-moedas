@@ -31,37 +31,37 @@ function converterValor() {
 }
 
 function paraBitcoin(valor, elementoValorConvertido) {
-  let valorBitcoin = valor * 0.000045;
+  let valorBitcoin = valor * 0.000053;
   elementoValorConvertido.innerHTML =
-    "O resultado em bitcoins é de ₿" + valorBitcoin.toFixed(6);
+    "O resultado em bitcoins é de " + Intl.NumberFormat("en-US", { style: 'currency', currency: 'BTC', maximumSignificantDigits: 6 }).format(valorBitcoin);
 }
 
 function paraReal(valor, elementoValorConvertido) {
   let valorReal = valor * 5.09;
   elementoValorConvertido.innerHTML =
-    "O resultado em reais é de R$" + valorReal.toFixed(2);
+    "O resultado em reais é de " + Intl.NumberFormat("pt-BR", { style: 'currency', currency: 'BRL' }).format(valorReal);
 }
 
 function paraEuro(valor, elementoValorConvertido) {
   let valorEuro = valor * 0.99;
   elementoValorConvertido.innerHTML =
-    "O resultado em euros é de €" + valorEuro.toFixed(2);
+    "O resultado em euros é de " + Intl.NumberFormat("de-DE", { style: 'currency', currency: 'EUR' }).format(valorEuro);
 }
 
 function paraIene(valor, elementoValorConvertido) {
   let valorIene = valor * 142.96;
-  elementoValorConvertido.innerHTML = 
-    "O resultado em ienes é de ¥" + valorIene.toFixed(2);
+  elementoValorConvertido.innerHTML =
+    "O resultado em ienes é de " + Intl.NumberFormat("ja-JP", { style: 'currency', currency: 'JPY' }).format(valorIene);
 }
 
 function paraLibra(valor, elementoValorConvertido) {
   let valorLibra = valor * 0.87;
-  elementoValorConvertido.innerHTML = 
-    "O resultado em libras é de $" + valorLibra.toFixed(2);
+  elementoValorConvertido.innerHTML =
+    "O resultado em libras é de " + Intl.NumberFormat("en-GB", { style: 'currency', currency: 'GBP' }).format(valorLibra);
 }
 
 function paraPeso(valor, elementoValorConvertido) {
   let valorPeso = valor * 20.04;
-  elementoValorConvertido.innerHTML = 
-    "O resultado em pesos é de $" + valorPeso.toFixed(2);
+  elementoValorConvertido.innerHTML =
+    "O resultado em pesos é de " + Intl.NumberFormat("es-MX", { style: 'currency', currency: 'MXN' }).format(valorPeso);
 }
