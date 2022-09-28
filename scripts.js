@@ -9,7 +9,7 @@ function converterValor() {
   let btnLibra = document.getElementById("libra").selected;
   let btnPeso = document.getElementById("peso").selected;
 
-  let elementoValorConvertido = document.getElementById("valorConvertido");
+  let elementoValorConvertido = document.getElementById("valor-convertido");
 
   if (valor <= 0) {
     elementoValorConvertido.innerHTML = "Digite um valor superior a zero";
